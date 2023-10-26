@@ -1,0 +1,40 @@
+
+.nav-links {
+    display: flex;
+  }
+
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px; /* Adjust the spacing as needed */
+  }
+
+
+ .btn{
+  padding: 0.3rem 0.7rem;
+  border-color: rgba(0, 0, 0, 0.151) ; 
+  display: none;
+ }
+
+
+ @media screen and (max-width:769px) {
+    .nav-links{
+      display: none;
+    }
+    .btn
+    {
+      display: block;
+    }
+ }
+
+ .toggle-menu
+ {
+  height: 0px;
+  overflow: hidden;
+  transition: all 500ms ;
+ }
+
+ .toggle-menu.active{
+  height: 100px;
+}

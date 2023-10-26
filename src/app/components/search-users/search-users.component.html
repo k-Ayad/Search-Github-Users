@@ -1,0 +1,11 @@
+
+<div class="container pt-4 mb-4">
+    <input type="text" [formControl]="searchControl" placeholder="Enter User Name" class="form-control"/>
+    <div *ngIf="errorFlag">
+        <span style="color: rgb(201, 67, 67);" >Server Error: Please Try again later</span>
+    </div>
+</div>
+
+<div class="container">
+    <app-users-list></app-users-list>
+</div>

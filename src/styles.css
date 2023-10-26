@@ -1,1 +1,262 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+    --main-bg-color: brown;
+    --secondary-bg-color: #F6F8FA;
+    --scroll-bar-color: #272829;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* ____________ flex ________________ */
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* ______________display______________ */
+
+.d-inline {
+    display: inline;
+}
+
+.d-block {
+    display: block;
+}
+
+/* ____________background-color__________ */
+.bg-nav {
+    background-color: var(--secondary-bg-color);
+}
+
+.bg-dark {
+    background-color: black;
+}
+
+.bg-transparent{
+    background-color: transparent !important;
+}
+
+.bg-white
+{
+    background-color: white;
+}
+/* _______________padding + margin___________________ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.p-0 {
+    padding: 0;
+}
+
+
+.py-1 {
+    padding-block: 0.4rem;
+}
+
+.pt-2 {
+    padding-block: 0.7rem;
+}
+
+.py-3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.px-3 {
+    padding-inline: 1rem;
+}
+
+.p-3 {
+    padding: 1rem;
+}
+
+.px-1 {
+    padding-inline: 0.4rem;
+}
+
+.px-2 {
+    padding-inline: 0.8rem;
+}
+
+.pt-4 {
+    padding-top: 4rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.ms-auto
+{
+    margin-inline-start: auto;
+}
+/* _______________ font-size _____________ */
+
+.fs-1 {
+    font-size: 2rem;
+}
+
+.fs-2 {
+    font-size: 1.5rem;
+}
+
+.fs-3 {
+    font-size: 1.25rem;
+}
+
+.fs-4 {
+    font-size: 1.1rem;
+}
+
+.fs-5 {
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width:768px) {
+    .fs-1 {
+        font-size: 2rem;
+    }
+
+    .fs-2 {
+        font-size: 1.5rem;
+    }
+
+    .fs-3 {
+        font-size: 1.25rem;
+    }
+
+    .fs-4 {
+        font-size: 1.1rem;
+    }
+
+    .fs-5 {
+        font-size: 1rem;
+    }
+}
+
+/* ____________________ Text  __________ */
+.text-center {
+    text-align: center;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.text-black
+{
+    color: black;
+}
+/* ____________________ width + height _______________ */
+
+.w-100 {
+    width: 100%;
+}
+
+@media screen and (min-width:991px) {
+    .w-lg-70 {
+        width: 70%;
+    }
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+
+/* _______________ position ______________________ */
+
+.position-fixed {
+    position: fixed;
+}
+
+
+/* _______________ shadow ____________________ */
+
+.shadow {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+/* _______________btn_______________ */
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+/* ______________ custom scroll-bar _____________ */
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-bar-color);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+
