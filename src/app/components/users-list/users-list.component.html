@@ -1,37 +1,17 @@
-<table>
+<table *ngIf="users.length > 0" class="mb-4">
     <tr>
       <th class="avatar-width">Avatar</th>
       <th>User Name</th>
       <th>User Profile Link</th>
     </tr>
-    <tr>
-      <td><img src="assets/img/95288568.jpg" width="100%" alt=""></td>
-      <td>k-Ayad</td>
-      <td><a href="https://github.com/k-Ayad">https://github.com/k-Ayad</a></td>
+    <tr *ngFor="let user of users">
+      <td><img src="{{user.avatar_url}}" width="100%" alt=""></td>
+      <td>{{user.login}}</td>
+      <td><a href="{{user.html_url}}">{{user.html_url}}</a></td>
     </tr>
-    <tr>
-      <td><img src="assets/img/95288568.jpg" width="100%" alt=""></td>
-      <td>Francisco Chang</td>
-      <td>Mexico</td>
-    </tr>
-    <tr>
-      <td><img src="assets/img/95288568.jpg" width="100%" alt=""></td>
-      <td>Roland Mendel</td>
-      <td>Austria</td>
-    </tr>
-    <tr>
-      <td><img src="assets/img/95288568.jpg" width="100%" alt=""></td>
-      <td>Helen Bennett</td>
-      <td>UK</td>
-    </tr>
-    <tr>
-      <td><img src="assets/img/95288568.jpg" width="100%" alt=""></td>
-      <td>Yoshi Tannamuri</td>
-      <td>Canada</td>
-    </tr>
-    <tr>
-      <td><img src="assets/img/95288568.jpg" width="100%" alt=""></td>
-      <td>Giovanni Rovelli</td>
-      <td><a href="https://github.com/k-Ayad">https://github.com/k-Ayad</a></td>
-    </tr>
+
   </table>
+
+  <div class="w-100 text-center " *ngIf="users.length == 0">
+     No Users Found
+  </div>
