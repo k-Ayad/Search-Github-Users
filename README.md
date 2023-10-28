@@ -1,27 +1,32 @@
-# GithubUsersSearch
+# GitHub User Search Angular App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+This Angular application provides a user-friendly search feature for GitHub users. It uses Angular, RxJS for handling asynchronous operations, NgRx for managing application state, and Jasmine framework for unit testing.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **User Search**: Users can search for GitHub users by entering a search term in the provided input field.
 
-## Code scaffolding
+- **Asynchronous Operations**: The application handles asynchronous operations, such as making API requests to the GitHub API, using RxJS observables.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Application State Management**: NgRx is used for managing the application state, making it easy to handle complex data flow and state changes.
 
-## Build
+- **Unit Testing**: The project is set up for unit testing using the Jasmine testing framework, ensuring code quality and reliability.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Technologies Used
 
-## Running unit tests
+- **Angular**: The application is built using Angular, a popular front-end framework.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **RxJS**: RxJS is used to manage asynchronous operations, such as making API requests and handling user input.
 
-## Running end-to-end tests
+- **NgRx**: NgRx is employed to manage the application state, making it easier to handle data flow and updates.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Jasmine**: Jasmine is used for unit testing to ensure the correctness and reliability of the codebase.
 
-## Further help
+## Getting Started
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To run the application locally, follow these steps:
+
+1. **Clone the Repository**:
+
+   ```shell
+   git clone https://github.com/yourusername/your-angular-app.git

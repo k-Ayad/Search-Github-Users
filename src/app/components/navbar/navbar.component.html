@@ -14,8 +14,8 @@
                 </div>
 
             <div class="nav-links ms-auto px-3">
-                <a routerLink="/">Home</a>
-                <a routerLink="/search">Search</a>
+                <a routerLink="/" [class]="currentPath == '/' ? 'fw-bold' : ''">Home</a>
+                <a routerLink="/search" [class]="currentPath == '/search' ? 'fw-bold' : ''">Search</a>
             </div>
             <button (click)="toggleMenu()" class="ms-auto btn bg-transparent p-1"><span style="font-size: 25px; color: rgba(0, 0, 0, 0.678);" class="material-symbols-outlined">
                 menu
@@ -26,11 +26,11 @@
     <div  class="container bg-white  toggle-menu">
         <ul class="px-2">
             <li class="pt-2 d-block">
-                <a routerLink="/">Home</a>
+                <a routerLink="/" [class]="currentPath == '/' ? 'fw-bold' : ''">Home</a>
             </li>
 
             <li class="pt-2 d-block">
-                <a routerLink="/search">Search</a>
+                <a routerLink="/search" [class]="currentPath == '/search' ? 'fw-bold' : ''">Search</a>
             </li>
         </ul>
     </div>

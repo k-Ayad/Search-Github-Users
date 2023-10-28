@@ -16,4 +16,10 @@ table {
 
   .avatar-width{
     width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .bg-card{
+    background-color: #ffeeee;
   }

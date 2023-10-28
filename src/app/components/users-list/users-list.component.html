@@ -1,17 +1,24 @@
-<table *ngIf="users.length > 0" class="mb-4">
-    <tr>
-      <th class="avatar-width">Avatar</th>
-      <th>User Name</th>
-      <th>User Profile Link</th>
-    </tr>
-    <tr *ngFor="let user of users">
-      <td><img src="{{user.avatar_url}}" width="100%" alt=""></td>
-      <td>{{user.login}}</td>
-      <td><a href="{{user.html_url}}">{{user.html_url}}</a></td>
-    </tr>
 
-  </table>
 
-  <div class="w-100 text-center " *ngIf="users.length == 0">
+<div *ngIf="users.length > 0">
+
+  <div *ngFor="let user of users" class="d-flex align-items-center px-3 shadow py-3 border-radius-20 bg-card mb-4" >
+    <div class="avatar-width mx-4">
+      <img src="{{user.avatar_url}}" width="100%" alt="{{user.login}}">
+    </div>
+    
+    <div>
+      <div>
+        <h2>{{user.login}}</h2>
+      </div>
+      <div>
+        <a href="{{user.html_url}}">{{user.html_url}}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="w-100 text-center fw-bold" *ngIf="users.length == 0">
      No Users Found
   </div>
